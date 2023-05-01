@@ -25,16 +25,17 @@
 #include <asm/setup.h>
 #include <asm/sections.h>
 
-#define STACK_RANDOMIZE_MAX        512
+#define STACK_RANDOMIZE_MAX 512
 #define STACK_RANDOMIZE_STRONG_MAX 1024
-#define STACK_ALIGN                16
+#define STACK_ALIGN 16
 
 static inline u64 kaslr_get_random(void)
 {
 	u64 cval;
 
 	isb();
-	asm volatile("mrs %0, cntvct_el0" : "=r" (cval));
+	asm volatile("mrs %0, cntvct_el0"
+				 : "=r"(cval));
 
 	return cval;
 }

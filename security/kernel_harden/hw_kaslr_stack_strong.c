@@ -26,8 +26,8 @@ EXPORT_SYMBOL(kti_offset);
 void kti_randomize_init(void)
 {
 	kti_offset = (kaslr_get_random() %
-			(STACK_RANDOMIZE_STRONG_MAX / STACK_ALIGN)) *
-		STACK_ALIGN;
+				  (STACK_RANDOMIZE_STRONG_MAX / STACK_ALIGN)) *
+				 STACK_ALIGN;
 }
 
 void set_init_thread_info(unsigned long addr)

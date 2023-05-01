@@ -1,2 +1,6 @@
 # android_kernel_huawei_victoria
-Huawei P10 EMUI 8 Kernel By Huawei.Little modify for research.
+华为P10 EMUI 8 简易内核自用。
+
+###### 目标特性：
+1. 开启PTRACE
+2. 关闭华为ROOT检查，SELinux间谍。
