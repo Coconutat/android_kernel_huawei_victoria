@@ -32,7 +32,7 @@ mv /tmp/anykernel/kernel-Image.gz /tmp/anykernel/Image.gz;
 
 ## AnyKernel kernel install
 
-ui_print "Proto8 Kernel is being infused";
+ui_print "Huawei P10 EMUI 8 Lite is being infused";
 
 split_boot;
 
